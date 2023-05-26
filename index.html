@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" type="module"></script>
+    <title>Newsletter Subscription Form</title>
+  </head>
+  <body>
+    <main>
+      <div id="signup" class="wrapper">
+        <div class="card">
+          <div class="content grid--md">
+            <h1 class="h1">Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul role="list" class="grid--sm">
+              <li class="flex--sm items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon--sm"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                >
+                  <g fill="none">
+                    <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                    <path
+                      stroke="#FFF"
+                      stroke-width="2"
+                      d="M6 11.381 8.735 14 15 8"
+                    />
+                  </g>
+                </svg>
+                <p>Product discovery and building what matter</p>
+              </li>
+              <li class="flex--sm items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon--sm"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                >
+                  <g fill="none">
+                    <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                    <path
+                      stroke="#FFF"
+                      stroke-width="2"
+                      d="M6 11.381 8.735 14 15 8"
+                    />
+                  </g>
+                </svg>
+                <p>Measuring to ensure updates are a success</p>
+              </li>
+              <li class="flex--sm items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon--sm"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                >
+                  <g fill="none">
+                    <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                    <path
+                      stroke="#FFF"
+                      stroke-width="2"
+                      d="M6 11.381 8.735 14 15 8"
+                    />
+                  </g>
+                </svg>
+                <p>And much more!</p>
+              </li>
+            </ul>
+            <form action="/success.html" id="newsletter-form" class="grid--md">
+              <div class="grid--xs">
+                <div class="flex--between items-center">
+                  <label for="email"><small>Email address</small></label>
+                  <p class="error-message hidden">
+                    <small>Valid email required</small>
+                  </p>
+                </div>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="email@company.com"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn">
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
+          <img
+            src="/desktop-image.svg"
+            class="image image--desktop"
+            alt="graphs and stuff"
+          />
+          <img
+            src="/mobile-image.svg"
+            class="image image--mobile"
+            alt="graphs and stuff"
+          />
+        </div>
+      </div>
+      <div id="success" class="wrapper hidden">
+        <div class="content grid--md">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            class="icon--lg"
+          >
+            <defs>
+              <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+                <stop offset="0%" stop-color="#FF6A3A" />
+                <stop offset="100%" stop-color="#FF527B" />
+              </linearGradient>
+            </defs>
+            <g fill="none">
+              <circle cx="32" cy="32" r="32" fill="url(#a)" />
+              <path
+                stroke="#FFF"
+                stroke-width="4"
+                d="m18.286 34.686 8.334 7.98 19.094-18.285"
+              />
+            </g>
+          </svg>
+          <h1 class="h1">Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to
+            <strong id="submitted-email"></strong>. Please open it and click the
+            button inside to confirm your subscription.
+          </p>
+          <button class="btn" id="dismiss">Dismiss message</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
